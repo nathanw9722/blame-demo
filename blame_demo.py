@@ -5,6 +5,7 @@ from aapi import *
 import boto3
 import pandas as pd
 
+#define Workflow
 aws_env = Workflow(Environment.create_onprem(host='dba-tlv-wo2bil.bmc.com',
                                              username='emuser',
                                              password='empass'),
