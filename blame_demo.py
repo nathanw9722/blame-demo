@@ -18,7 +18,7 @@ pythonTransform = JobCommand(
     run_as="dbauser",
     command="/home/dbauser/bin/inventory_transforms/residential_inventory.py",
     variables=[{
-        'git_hash': 'ef54f790a950e09178b80165a82f03323c0059dc'
+        'git_hash': '0ad84fc54e243522a24acbd6bf7e55398613d204'
     }],
     run_as_dummy=False
 )
