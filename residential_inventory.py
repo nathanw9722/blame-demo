@@ -64,3 +64,4 @@ real_estate_data = generate_real_estate_data()
 
 # Save to Parquet file
 save_to_parquet(real_estate_data)
+
