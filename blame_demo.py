@@ -19,22 +19,22 @@ pythonTransform = JobCommand(
     run_as_dummy=run_as_dummy
 )
 
-pythonTransform2 = JobCommand(
-    'InventoryTransforms2',
+pythonTransform5 = JobCommand(
+    'InventoryTransforms5',
     run_as="dbauser",
     command="/home/dbauser/bin/inventory_transforms/inventory-transforms.py",
     run_as_dummy=run_as_dummy
 )
 
-pythonTransform3 = JobCommand(
-    'InventoryTransforms3',
+pythonTransform4 = JobCommand(
+    'InventoryTransforms4',
     run_as="dbauser",
     command="/home/dbauser/bin/inventory_transforms/inventory-transforms.py",
     run_as_dummy=run_as_dummy
 )
 
-aws_env.chain([pythonTransform,pythonTransform2], inpath='ChainedJobs')
-aws_env.chain([pythonTransform,pythonTransform3],inpath='ChainedJobs')
+aws_env.chain([pythonTransform,pythonTransform5], inpath='ChainedJobs')
+aws_env.chain([pythonTransform,pythonTransform4],inpath='ChainedJobs')
 
 
 if aws_env.build():
