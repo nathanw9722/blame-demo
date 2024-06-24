@@ -15,7 +15,7 @@ run_as_dummy = True
 pythonTransform = JobCommand(
     'InventoryTransforms',
     run_as="dbauser",
-    command="/home/dbauser/bin/inventory_transforms/inventory-transforms.py",
+    command="/home/dbauser/bin/inventory_transforms/residential_inventory.py",
     run_as_dummy=False
 )
 
